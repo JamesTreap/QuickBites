@@ -1,4 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@font-face {
+  font-family: Acronym;
+  src: url('../public/fonts/Acronym\ Bold.otf');
+  font-display: swap;
+}
+@font-face {
+  font-family: Riveruta;
+  src: url('../public/fonts/Riveruta\ Regular.ttf');
+  font-display: swap;
+}
+
+
+:root {
+	--white: #ffffff;
+	--pink: #d32661;
+  --yellow: #fbb72c;
+  --black: #181a1c;
+}
 
 * {
   box-sizing: border-box;
@@ -10,6 +28,6 @@ html {
 
 body {
   margin: 0;
-  background-color: #3f3f3f;
+  background-color: var(--black);
 }
 

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Hero from "./components/HeroBanner/Hero";
 import Header from "./components/Layout/Header";
 import Meals from './components/Meals/Meals';
 import Cart from './components/Cart/Cart';
@@ -20,6 +21,7 @@ function App() {
       {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Header onShowCart={showCartHandler} />
       <main>
+        <Hero />
         <Meals />
       </main>
     </CartProvider>

@@ -1,0 +1,42 @@
+.hero {
+    background-image: linear-gradient(to bottom, transparent 90%,  var(--black)), url('/public/images/herobanner.jpg');
+    background-position: center top;
+    width: 100%;
+    min-height: 50em;
+    background-size: cover;
+    padding-left: 5em;
+}
+
+.hero h1 {
+    color: var(--white);
+    padding-top: 5em;
+    font-size: 4em;
+    line-height: 1em;
+    max-width: 6em;
+    font-family: Acronym;
+    margin-top: 0em;
+    margin-bottom: 0.35em;
+}
+
+.hero h2 {
+    color: var(--white);
+    max-width: 12em;
+    font-family: Riveruta;
+    font-weight: 100;
+    font-size: 1.1em;
+    padding-bottom: 1.1em;
+}
+
+.hero span {
+    color: var(--yellow);
+}
+
+.hero button {
+    color: var(--black);
+    background: var(--yellow);
+    border: 0px transparent;
+    border-radius: 25em;
+    padding: 1.1em 5em;
+    font-family: Riveruta;
+    font-weight: 900;
+}
