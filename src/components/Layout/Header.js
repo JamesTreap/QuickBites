@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import classes from './Header.module.css'
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo-inverted.png';
 import HeaderCartButton from './HeaderCartButton';
 
 const Header = (props) => {

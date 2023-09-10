@@ -2,15 +2,15 @@
     top: 0;
     left: 0;
     width: 100%;
+    margin-top: 1em;
     height: 5rem;
-    background-color: var(--yellow);
     color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 5em;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 10;
+    position: absolute;
 }
 
 .logo_section {
@@ -20,5 +20,5 @@
 
 .header img {
     max-height: 5em;
-    padding: 0.5em 0.5em 0.5em 0em;
+    padding: 0.5em 0em 0.5em 0em;
 }

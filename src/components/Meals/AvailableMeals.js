@@ -22,6 +22,7 @@ const AvailableMeals = () => {
             for (const key in responseData) {
                 loadedMeals.push({
                     id: key,
+                    image: responseData[key].image,
                     name: responseData[key].name,
                     description: responseData[key].description,
                     price: responseData[key].price
@@ -32,12 +33,12 @@ const AvailableMeals = () => {
             setIsLoading(false);
         };
 
-        fetchMeals().catch(error => {               // fetchMeals is async and throws a promise
+        fetchMeals().catch(error => { // fetchMeals is async and throws a promise
             setIsLoading(false);
             setHttpError(error.message);
         });
 
-    }, []);                 // no dependencies, don't want to add additional data
+    }, []); // no dependencies, don't want to add additional data
 
 
     if (isLoading) {
@@ -58,6 +59,7 @@ const AvailableMeals = () => {
 
     const mealsList = meals.map((meal =>
         <MealItem
+            image={meal.image}
             id={meal.id}
             key={meal.id}
             name={meal.name}
