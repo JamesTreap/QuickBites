@@ -41,6 +41,11 @@
     margin: 2em;
     color: var(--white);
     cursor: pointer;
+    transition: var(--button-trans);
+}
+
+.close:hover  {
+    color: var(--yellow);
 }
 
 .mealDesc {
@@ -68,11 +73,9 @@
 }
 
 .nutrition h5, .nutrition h6 {
-    padding-bottom: none;
     margin: 0px;
     font-weight: 300;
     font-size: 1em;
-
 }
 
 .nutrition h6 {

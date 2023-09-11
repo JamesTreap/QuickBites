@@ -1,6 +1,7 @@
 .meals {
     margin: 2rem 5em;
     animation: meals-appear 1s ease-out forwards;
+    min-height: 35em;
 }
 
 .MealsLoading {
@@ -17,6 +18,43 @@
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.meals h4 {
+    font-size: 1.3em;
+    margin-bottom: 0em;
+}
+
+.meals p {
+    color: var(--text-gray);
+    margin-top: 0em;
+    font-size: 0.9em;
+}
+
+.meals input {
+    width: min(40em, 100%);
+    font-weight: 500;
+    background: var(--gray);
+    background-image: url('/public/images/magnifying-gray.svg');
+    background-position-y: center;
+    background-position-x: 5%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border-radius: 1.3em;
+    height: 3em;
+    border: 0px solid;
+    padding: 0em 2em 0em 4.1em;
+    color: var(--white);
+    font-family: Poppins;
+    box-shadow: black 0.3em 0.3em 0.3em;
+}
+
+.meals input:active, .meals input:focus {
+    background-image: url('/public/images/magnifying.svg');
+    background-position-y: center;
+    background-position-x: 5%;
+    background-repeat: no-repeat;
+    font-weight: 300;
 }
 
 @keyframes meals-appear {

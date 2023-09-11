@@ -62,8 +62,8 @@ const AvailableMeals = () => {
             return false;
         });
         setMeals(filteredData);
+        console.log(filteredData);
     }, [searchInput, setSearchInput]);
-
 
     if (isLoading) {
         return (
@@ -98,6 +98,8 @@ const AvailableMeals = () => {
 
     return (
         <section className={classes.meals}>
+            <h4>Hello there 👋</h4>
+            <p>What are you in the mood for today?</p>
             <input
                 type="search"
                 placeholder="Find what you're craving..."
@@ -106,6 +108,7 @@ const AvailableMeals = () => {
             <Card>
                 <ul>
                     {mealsList}
+                    {(mealsList.length === 0) && <h4>No results.</h4>}
                 </ul>
             </Card>
         </section>

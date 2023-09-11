@@ -12,7 +12,6 @@ const MealItem = props => {
                 <img src={props.image} alt="Meal item"></img>
                 <h3>{props.name}</h3>
                 ⭐⭐⭐⭐⭐
-                {/* <div className={classes.description}>{props.description}</div> */}
                 <div className={classes.price}>{price}</div>
                 <button onClick={() => toggleShow (!show)}>See Item</button>
                 {show && <MealItemModal {...props} toggleShow={toggleShow} /> }
