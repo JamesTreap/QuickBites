@@ -4,21 +4,29 @@ import classes from './AvailableMeals.module.css';
 import MealItem from './MealItem/MealItem';
 import Card from '../UI/Card';
 
+const loadedMeals = [];
+
 const AvailableMeals = () => {
     const [meals, setMeals] = useState([]);
+    const [searchInput, setSearchInput] = useState("");         // for searchbar
     const [isLoading, setIsLoading] = useState(true);           // will always load data when component is init
     const [httpError, setHttpError] = useState();               // by default, no data
 
+    const handleChange = (e) => {
+        e.preventDefault();
+        setSearchInput(e.target.value);
+    };
+
+    // initial data loading ----------------------------------
     useEffect(() => {
         const fetchMeals = async () => {
             const response = await fetch('https://react-food-app-treap-default-rtdb.firebaseio.com/meals.json');
 
             if (!response.ok) {
-                throw new Error('Something went wrong!');
+                throw new Error('Something went wrong! Please try again later.');
             }
 
             const responseData = await response.json();
-            const loadedMeals = [];
             for (const key in responseData) {
                 loadedMeals.push({
                     id: key,
@@ -43,6 +51,18 @@ const AvailableMeals = () => {
         });
 
     }, []); // no dependencies, don't want to add additional data
+    // ---------------------------------------------------------------------
+
+    // searchbar
+    useEffect(() => {
+        const filteredData = loadedMeals.filter((item) => {
+            if (item.name.toLowerCase().includes(searchInput.toLowerCase())) {
+                return item;
+            }
+            return false;
+        });
+        setMeals(filteredData);
+    }, [searchInput, setSearchInput]);
 
 
     if (isLoading) {
@@ -78,6 +98,11 @@ const AvailableMeals = () => {
 
     return (
         <section className={classes.meals}>
+            <input
+                type="search"
+                placeholder="Find what you're craving..."
+                onChange={handleChange}
+                value={searchInput} />
             <Card>
                 <ul>
                     {mealsList}
