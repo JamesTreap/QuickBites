@@ -1,16 +1,28 @@
 import classes from './MealItemModal.module.css';
+import { Fragment } from 'react';
+import ReactDOM from 'react-dom';
 
-const MealItemModal = props => {
+// import Modal from '../../UI/Modal';
+const portalElement = document.getElementById('overlays');
+
+const Backdrop = (props) => {
+    return <div className={'backdrop'} onClick={() => props.toggleShow()}></div>
+};
+
+const ModalOverlay = (props) => {
+    return <div className={[classes.modal, 'modal'].join(' ')}>
+        <h2>{props.name}</h2>
+        <span className='close' onClick={() => props.toggleShow()}>&times;</span>
+    </div>
+};
+
+const MealItemModal = (props) => {
     return (
-        <div className={classes.modal} onClick={() => props.toggleShow()}>
-            <div className={classes.modalcontent}>
-                <span class="close" onClick={() => props.toggleShow()}>&times;</span>
-                <p>{props.id}</p>
-                <p>{props.name}</p>
-                <p>{props.description}</p>
-            </div>
-        </div>
+        <Fragment>
+            {ReactDOM.createPortal(<Backdrop {...props}/>, portalElement)}
+            {ReactDOM.createPortal(<ModalOverlay {...props}></ModalOverlay>, portalElement)}
+        </Fragment>
     );
-}
+};
 
 export default MealItemModal;
