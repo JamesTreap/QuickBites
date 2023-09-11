@@ -1,8 +1,9 @@
-import classes from './MealItemModal.module.css';
-import { Fragment } from 'react';
+import { useContext, Fragment } from 'react';
 import ReactDOM from 'react-dom';
+import classes from './MealItemModal.module.css';
+import MealItemForm from './MealItemForm';
+import CartContext from '../../../store/cart-context';
 
-// import Modal from '../../UI/Modal';
 const portalElement = document.getElementById('overlays');
 
 const Backdrop = (props) => {
@@ -10,9 +11,28 @@ const Backdrop = (props) => {
 };
 
 const ModalOverlay = (props) => {
+    const cartCtx = useContext(CartContext);  
+    const addToCartHandler = (amount) => {
+        cartCtx.addItem({
+            id: props.id,
+            name: props.name,
+            amount: amount,
+            price: props.price
+        });
+    };
+
     return <div className={[classes.modal, 'modal'].join(' ')}>
-        <h2>{props.name}</h2>
-        <span className='close' onClick={() => props.toggleShow()}>&times;</span>
+        <div className={classes.imgOverlay} />
+        <img src={props.image} alt={props.name}></img>
+        <span className={classes.close} onClick={() => props.toggleShow()}>〈</span>
+        <div className={classes.mealDesc}>
+            <h2>{props.name}</h2>
+            <p>{props.description}</p>
+            <h6>Proteins....</h6>
+            <h6>Fats......</h6>
+            <h6>Carbohydrates.......</h6>
+            <MealItemForm id={props.id} onAddToCart={addToCartHandler} />
+        </div>
     </div>
 };
 

@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    background: var(--black);
+    border-top: solid 1px var(--yellow);
+    padding: 0em 5em;
+    color: var(--white);
+    font-family: Riveruta;
+}
+
+footer a {
+    margin-right: 1em;
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

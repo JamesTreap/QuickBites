@@ -14,8 +14,11 @@
 	--white: #ffffff;
 	--pink: #d32661;
 	--yellow: #fbb72c;
+  --yellow-hov: #c38c23;
 	--black: #181a1c;
-	--gray: #414147;
+	--gray: #35363d;
+  --bg-gray: #1f2027;
+  --button-trans: ease-in-out 50ms;
 }
 
 * {
