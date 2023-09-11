@@ -28,9 +28,21 @@ const ModalOverlay = (props) => {
         <div className={classes.mealDesc}>
             <h2>{props.name}</h2>
             <p>{props.description}</p>
-            <h6>Proteins....</h6>
-            <h6>Fats......</h6>
-            <h6>Carbohydrates.......</h6>
+            <div className={classes.nutrition}>
+                <h5>Proteins</h5>
+                <span className={classes.mealdots}></span>
+                <h6>{props.proteins + ' g'}</h6>
+            </div>
+            <div className={classes.nutrition}>
+                <h5>Fats</h5>
+                <span className={classes.mealdots}></span>
+                <h6>{props.fats + ' g'}</h6>
+            </div>
+            <div className={classes.nutrition}>
+                <h5>Carbohydrates</h5>
+                <span className={classes.mealdots}></span>
+                <h6> {props.carbs + ' g'}</h6>
+            </div>
             <MealItemForm id={props.id} onAddToCart={addToCartHandler} />
         </div>
     </div>

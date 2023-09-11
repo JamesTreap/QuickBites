@@ -25,7 +25,11 @@ const AvailableMeals = () => {
                     image: responseData[key].image,
                     name: responseData[key].name,
                     description: responseData[key].description,
-                    price: responseData[key].price
+                    price: responseData[key].price,
+                    proteins: responseData[key].proteins,
+                    fats: responseData[key].fats,
+                    carbs: responseData[key].carbohydrates,
+                    stars: responseData[key].stars
                 });
             }
 
@@ -65,6 +69,10 @@ const AvailableMeals = () => {
             name={meal.name}
             description={meal.description}
             price={meal.price}
+            proteins={meal.proteins}
+            fats={meal.fats}
+            carbs={meal.carbs}
+            stars={meal.stars}
         />
     ));
 
