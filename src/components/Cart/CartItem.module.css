@@ -13,12 +13,10 @@
 
 
 .price {
-  font-weight: bold;
   color: var(--yellow);
 }
 
 .amount {
-  font-weight: bold;
   padding: 0.25rem 0.75rem;
   border-radius: 6px;
 }

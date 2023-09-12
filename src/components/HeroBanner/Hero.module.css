@@ -20,7 +20,7 @@
 
 .hero h2 {
     color: var(--white);
-    max-width: 12em;
+    max-width: 14em;
     font-family: Riveruta;
     font-weight: 100;
     font-size: 1.1em;
@@ -39,4 +39,9 @@
     padding: 1.1em 5em;
     font-family: Riveruta;
     font-weight: 900;
+}
+
+.hero button:hover {
+    background-color: var(--yellow-hov);
+    cursor: pointer;
 }
