@@ -1,7 +1,6 @@
 .modal {
     animation: slide-left 300ms ease-out forwards;
     background: var(--bg-gray);
-    width: 60%;
 }
 
 .modal img {
@@ -81,5 +80,11 @@
 .nutrition h6 {
     color: var(--yellow);
     white-space: nowrap;
+}
+
+@media screen and (max-width: 650px) {
+    .modal img, .modal .imgOverlay {
+        height: 6em;
+    }
 }
 

@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/QuickBites/static/css/main.26c3bc3e.css",
-    "main.js": "/QuickBites/static/js/main.3e3a06db.js",
+    "main.css": "/QuickBites/static/css/main.0b5fc6e7.css",
+    "main.js": "/QuickBites/static/js/main.1e6673fb.js",
     "static/media/herobanner.jpg": "/QuickBites/static/media/herobanner.3c94840b4345823a3ea9.jpg",
     "static/media/Riveruta Regular.ttf": "/QuickBites/static/media/Riveruta Regular.954f0d0a6b8d7d45a520.ttf",
     "static/media/Acronym Bold.otf": "/QuickBites/static/media/Acronym Bold.09f9793420fee8aedeef.otf",
+    "static/media/Poppins-Light.ttf": "/QuickBites/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/star-yellow.svg": "/QuickBites/static/media/star-yellow.2eed5783dcde366034fb22ccaffe1d05.svg",
+    "static/media/magnifying-gray.svg": "/QuickBites/static/media/magnifying-gray.dac9d74facbdaa872882.svg",
+    "static/media/magnifying.svg": "/QuickBites/static/media/magnifying.23ab249c482d69d8439f.svg",
     "index.html": "/QuickBites/index.html",
-    "main.26c3bc3e.css.map": "/QuickBites/static/css/main.26c3bc3e.css.map",
-    "main.3e3a06db.js.map": "/QuickBites/static/js/main.3e3a06db.js.map"
+    "main.0b5fc6e7.css.map": "/QuickBites/static/css/main.0b5fc6e7.css.map",
+    "main.1e6673fb.js.map": "/QuickBites/static/js/main.1e6673fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.26c3bc3e.css",
-    "static/js/main.3e3a06db.js"
+    "static/css/main.0b5fc6e7.css",
+    "static/js/main.1e6673fb.js"
   ]
 }

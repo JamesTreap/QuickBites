@@ -1,5 +1,5 @@
 .hero {
-    background-image: linear-gradient(to bottom, transparent 90%,  var(--black)), url('/public/images/herobanner.jpg');
+    background-image: linear-gradient(to bottom, transparent,  var(--black)), url('/public/images/herobanner.jpg');
     background-position: center top;
     width: 100%;
     min-height: 50em;
@@ -44,4 +44,12 @@
 .hero button:hover {
     background-color: var(--yellow-hov);
     cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    .hero {
+        padding-left: 1em;
+        padding-right: 1em;
+        min-height: 40em;
+    }
 }

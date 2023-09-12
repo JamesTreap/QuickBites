@@ -4,7 +4,8 @@
 
 .card ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    grid-row-gap: .5em;
-    grid-column-gap: 3em;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(15.5em, 1fr));
+    grid-row-gap: 0.5em;
+    grid-column-gap: 0.5em;
 }

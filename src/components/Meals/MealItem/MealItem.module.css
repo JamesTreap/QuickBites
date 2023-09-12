@@ -49,3 +49,9 @@
 .meal button:hover {
     background: var(--yellow-hov);
 }
+
+@media screen and (max-width: 650px) {
+    .meal {
+        width: 100%;
+    }
+}

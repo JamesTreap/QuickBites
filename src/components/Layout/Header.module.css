@@ -24,3 +24,14 @@
     max-height: 5em;
     padding: 0.5em 0em 0.5em 0em;
 }
+
+@media screen and (max-width: 650px) {
+    .header {
+        padding-left: 1em;
+        padding-right: 1em;
+        background: linear-gradient(to bottom, #0f1314, transparent );
+    }
+    .header h1 {
+        display: none;
+    }
+}
