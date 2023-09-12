@@ -62,7 +62,6 @@ const AvailableMeals = () => {
             return false;
         });
         setMeals(filteredData);
-        console.log(filteredData);
     }, [searchInput, setSearchInput]);
 
     if (isLoading) {

@@ -58,7 +58,7 @@ body {
   top: 7.5vh;
   left: 50%;
   translate: -50%;
-  background-color: var(--white);
+  background-color: var(--gray);
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
@@ -66,11 +66,11 @@ body {
 
 @media (min-width: 768px) {
   .modal {
-      width: fit-content;
+      width: 60%;
   }
 }
 
-h4, h5, h6, p {
+h4, h5, h6, p, span {
   color: var(--white);
 }
 

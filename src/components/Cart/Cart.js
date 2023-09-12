@@ -58,13 +58,15 @@ const Cart = (props) => {
 
     const cartModalContent = (
         <Fragment>
-            {cartItems}
-            <div className={classes.total}>
-                <span>Total Amount</span>
-                <span>{totalAmount}</span>
+            <div className={classes.zeCart}>
+                {cartItems}
+                <div className={classes.total}>
+                    <span>Total Amount</span>
+                    <span>{totalAmount}</span>
+                </div>
+                {isCheckedout && <Checkout onConfirm={submitOrderHandler} onCancel={props.onClose} />}
+                {!isCheckedout && ModalActions}
             </div>
-            {isCheckedout && <Checkout onConfirm={submitOrderHandler} onCancel={props.onClose} />}
-            {!isCheckedout && ModalActions}
         </Fragment>
     );
 
