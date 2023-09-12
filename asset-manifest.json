@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/QuickBites/static/css/main.bd81c04b.css",
-    "main.js": "/QuickBites/static/js/main.218a3019.js",
+    "main.css": "/QuickBites/static/css/main.0b5fc6e7.css",
+    "main.js": "/QuickBites/static/js/main.1e6673fb.js",
     "static/media/herobanner.jpg": "/QuickBites/static/media/herobanner.3c94840b4345823a3ea9.jpg",
     "static/media/Riveruta Regular.ttf": "/QuickBites/static/media/Riveruta Regular.954f0d0a6b8d7d45a520.ttf",
     "static/media/Acronym Bold.otf": "/QuickBites/static/media/Acronym Bold.09f9793420fee8aedeef.otf",
@@ -10,11 +10,11 @@
     "static/media/magnifying-gray.svg": "/QuickBites/static/media/magnifying-gray.dac9d74facbdaa872882.svg",
     "static/media/magnifying.svg": "/QuickBites/static/media/magnifying.23ab249c482d69d8439f.svg",
     "index.html": "/QuickBites/index.html",
-    "main.bd81c04b.css.map": "/QuickBites/static/css/main.bd81c04b.css.map",
-    "main.218a3019.js.map": "/QuickBites/static/js/main.218a3019.js.map"
+    "main.0b5fc6e7.css.map": "/QuickBites/static/css/main.0b5fc6e7.css.map",
+    "main.1e6673fb.js.map": "/QuickBites/static/js/main.1e6673fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd81c04b.css",
-    "static/js/main.218a3019.js"
+    "static/css/main.0b5fc6e7.css",
+    "static/js/main.1e6673fb.js"
   ]
 }
