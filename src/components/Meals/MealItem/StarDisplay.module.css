@@ -1,0 +1,13 @@
+.starSec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.2em;
+}
+
+.starSec img {
+    max-height: 1em;
+    max-width: 1em;
+    border-radius: 0em;
+    margin: 0em;
+}
